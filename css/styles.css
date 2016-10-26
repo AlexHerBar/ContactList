@@ -1,0 +1,163 @@
+*{box-sizing: border-box;}
+body{font-family: 'Raleway', sans-serif;}
+
+.cont{
+	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.cont{
+	margin-top: 80px;
+}
+
+#add{
+	text-decoration: none;
+	cursor: pointer;
+	text-align: center;
+	border-radius: 30px;
+	border: none;
+	color: white;
+	background-color: #4CAF50;
+	font-size: 16px;
+	width: 180px; 
+	padding: 5px;
+	float: right;
+	margin-top: 15px;
+
+}
+
+#add:hover{
+	color: #4CAF50;
+	background-color: white;
+	border: 1px solid #4CAF50;
+}
+
+div.cont ul{
+	margin-top: 80px;
+	list-style: none;
+}
+
+p.name{
+	font-weight: bold;
+	color: #f44336;
+	font-size: 18px;
+}
+
+p.email, p.number{
+	display: inline-block;
+	color: #555555;
+}
+
+p.number{
+	margin-left: 8px;
+}
+
+.line{
+	width: 100%;
+	height: 2px;
+	background-color: #f44336;
+}
+
+.vcontact p{
+	margin-top: 30px;
+}
+
+.vcontact p.number{
+	float: right;
+}
+
+.vcontact p.notes{
+	font-weight: bold;
+}
+
+.vcontact p.note{
+	margin-top: 10px;
+}
+
+.vbuttons .vbtn{
+	text-decoration: none;
+	cursor: pointer;
+	text-align: center;
+	border-radius: 30px;
+	border: none;
+	color: white;
+	font-size: 16px;
+	width: 120px;
+	padding: 5px;
+	height: 32px;
+	margin-top: 40px;
+}
+
+.vbuttons .back{
+	float: left;
+	background-color: #3498db;
+}
+
+.vbuttons .edit, .vbuttons .delete{
+	float: right;
+}
+
+.vbuttons .edit{
+	background-color: #f1c40f;
+	margin-right: 5px;
+}
+
+.vbuttons .delete{
+	background-color: #f44336;
+}
+
+h2 span{
+	margin-top: 12px;
+	float: right;
+	font-size: 15px;
+	color: gray;
+}
+
+.editForm, .newContactForm{
+	margin-top: 30px;
+}
+
+.ebuttons, .ncbuttons{ 
+	float: right;
+}
+
+.ebuttons .ebtn, .ncbuttons .ncbtn{
+	text-decoration: none;
+	cursor: pointer;
+	text-align: center;
+	border-radius: 30px;
+	border: none;
+	color: white;
+	font-size: 16px;
+	width: 120px; 
+	padding: 5px;
+	float: left;
+	margin-top: 10px;
+}
+
+.ebuttons .back, .ncbuttons .back{
+	background-color: #3498db;
+	margin-right: 5px;
+}
+
+.ebuttons .back:hover, .ncbuttons .back:hover{
+	background-color: white;
+	border: 1px solid #3498db;
+	color: #3498db;
+}
+
+.ebuttons .saveEdit, .ncbuttons .saveContact{
+	background-color: #4CAF50;
+}
+
+.ebuttons .saveEdit:hover, .ncbuttons .saveContact:hover{
+	background-color: white;
+	border: 1px solid #4CAF50;
+	color: #4CAF50;
+}
+
+a.linkContactView:hover{
+	text-decoration: none;
+}
+

@@ -1,0 +1,13 @@
+	<div class="cont row center-block">
+		<h3 class="col-md-6">Contacts List</h3>
+		<a ng-href="#/new-contact" id="add" class="col-md-6 btn"><span class="glyphicon glyphicon-plus"></span> New Contact</a>
+		<ul class="list-group">
+			<li class="list-group-item" ng-repeat="contact in data" id="{{contact.$id}}">
+				<a ng-href="#/{{contact.$id}}/view" class="linkContactView">
+					<p class="name">{{contact.name}}</p>
+					<p class="email"><span class="glyphicon glyphicon-envelope"></span> {{contact.email}}</p>
+					<p class="number"><span class="glyphicon glyphicon-phone"></span> {{contact.phone}}</p>
+				</a>
+			</li>
+		</ul>
+	</div>

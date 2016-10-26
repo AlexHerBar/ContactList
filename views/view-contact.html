@@ -1,0 +1,13 @@
+	<div class="cont row center-block vcontact">
+		<h2 class="">{{dataObj[params.id].name}}</h2>
+		<div class="line"></div>
+		<p class="email"><span class="glyphicon glyphicon-envelope"></span> {{dataObj[params.id].email}}</p>
+		<p class="number"><span class="glyphicon glyphicon-phone"></span>{{dataObj[params.id].phone}}</p>
+		<p class="notes">NOTES:</p>
+		<p class="note">{{dataObj[params.id].notes}}</p>
+		<div class="vbuttons">
+			<a class="back vbtn" ng-href="#/"><span class="glyphicon glyphicon-chevron-left"></span> Back</a>
+			<a class="delete vbtn" ng-click="deleteContact(params.id)" ng-href=""><span class="glyphicon glyphicon-trash"></span> Delete</a>
+			<a class="edit vbtn" ng-href="#/{{params.id}}/edit"><span class="glyphicon glyphicon-pencil"></span> Edit</a>
+		</div>
+	</div>

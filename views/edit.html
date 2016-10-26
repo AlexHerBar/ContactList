@@ -1,0 +1,30 @@
+	<div class="cont row center-block econtact">
+		<h2>{{dataObj[params.id].name}}<span>(Editing Mode)</span></h2>
+		<div class="line"></div>
+
+		<form class="editForm" name="form" ng-submit="form.$valid && editContact(params.id)" novalidate>
+			<div class="form-group" ng-class="{ 'has-error': form.Name.$invalid && (form.Name.$touched || form.$submitted) }">
+			    <label for="inpName">Name: </label>
+			    <input type="text" class="form-control" class="inpName" placeholder="Name" name="Name" ng-model="dataObj[params.id].name" required>
+			    <p class="help-block" ng-show="form.Name.$error.required && (form.Name.$touched || form.$submitted)">The name is required.</p>
+			</div>
+			<div class="form-group" ng-class="{ 'has-error': form.Email.$invalid && (form.Email.$touched || form.$submitted) }">
+			    <label for="inpEmail">Email: </label>
+			    <input type="email" class="form-control" class="inpEmail" placeholder="Email" name="Email" ng-model="dataObj[params.id].email" required>
+			    <p class="help-block" ng-show="form.Email.$error.required && (form.Email.$touched || form.$submitted)">The email is required.</p>
+			</div>
+			<div class="form-group" ng-class="{ 'has-error': form.Phone.$invalid && (form.Phone.$touched || form.$submitted) }">
+			    <label for="inpPhone">Phone: </label>
+			    <input type="text" class="form-control" class="inpPhone" placeholder="Phone" name="Phone" ng-model="dataObj[params.id].phone" required>
+			    <p class="help-block" ng-show="form.Phone.$error.required && (form.Phone.$touched || form.$submitted)">The phone is required.</p>
+			</div>
+			<div class="form-group">
+			    <label for="inpNotes">Notes: </label>
+			    <textarea class="form-control" class="inpNotes" placeholder="Notes..." ng-model="dataObj[params.id].notes"></textarea>
+			</div>
+			<div class="ebuttons">
+				<a ng-href="#/{{params.id}}/view" class="back ebtn"><span class="glyphicon glyphicon-chevron-left"></span> Back</a>
+				<button class="saveEdit ebtn" type="submit"><span class="glyphicon glyphicon-ok"></span> Save</button>
+			</div>
+		</form>
+	</div>
